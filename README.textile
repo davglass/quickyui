@@ -12,6 +12,8 @@ You are ready to go!!
 
 h3. Example
 
+"Live Example":http://davglass.github.com/quickyui/
+
 <pre class="console">
 <script src="yui_combo_url"></script>
 <script src="quickyui.js"></script>
