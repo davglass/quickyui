@@ -1,0 +1,33 @@
+h1. QuickYUI
+
+This module is aimed at assisting potential users of YUI 3 that have a problem with the YUI.use/callback approach.
+
+h2. Using
+
+First, pick all the module you want to use from the "Dependency Configurator":http://developer.yahoo.com/yui/3/configurator/
+
+Now, include that combo URL on your page.
+Then include quickyui.js *after* the main YUI include. 
+You are ready to go!!
+
+h3. Example
+
+<pre class="console">
+<script src="yui_combo_url"></script>
+<script src="quickyui.js"></script>
+
+
+<script>
+Y.ready(function() {
+    Y.one('body').setStyle('backgroundColor', 'red').append('<p>Ready #1 called</p>');
+});
+
+Y.ready(function() {
+    Y.one('body').setStyle('backgroundColor', 'blue').append('<p>Ready #2 called</p>');
+});
+Y.ready(function() {
+    Y.one('body').setStyle('color', 'white').append('<p>Ready #3 called</p>');
+});
+</script>
+</pre>
+
